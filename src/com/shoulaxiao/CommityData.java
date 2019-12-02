@@ -13,7 +13,7 @@ public class CommityData {
     public static int NODE_NUM;
     public static int EDGE_NUM;
     static int COMMITY_NUM;
-    static final int SPECIES_NUM=5;//种群数
+    static final int SPECIES_NUM=450;//种群数
     static final int DEVELOP_NUM=50;//进化代数
 
     static final float pcl=0.2f,pch=0.8f;//交叉概率
@@ -27,7 +27,7 @@ public class CommityData {
     public static List<ArrayList<Integer>> neigbor_List;//邻接表
     public static int[][] adjacentMatrix;//邻接矩阵
 
-    static String path="/home/shoulaxiao/文档/dataCluster/Dolphin1.txt";
+    static String path="/home/shoulaxiao/文档/dataCluster/karate.txt";
 
     static {
         String encoding="utf-8";

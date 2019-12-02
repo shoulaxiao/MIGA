@@ -38,7 +38,7 @@ public class SpeciesPopulation {
             for (int i=0;i<CommityData.NODE_NUM;i++){
                 System.out.print(point.genes[i]+" ");
             }
-            System.out.println("适应度="+point.fitness+","+"选择概率="+point.rate);
+            System.out.println("适应度="+point.fitness+",rate="+point.rate);
             point=point.next;
             System.out.println("----------");
         }

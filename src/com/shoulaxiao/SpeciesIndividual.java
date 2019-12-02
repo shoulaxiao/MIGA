@@ -96,6 +96,7 @@ public class SpeciesIndividual implements Cloneable {
      * @return
      */
     public SpeciesIndividual Deepclone(){
+
          SpeciesIndividual newspecies=new SpeciesIndividual();
          for (int i=0;i<this.genes.length;i++){
              newspecies.genes[i]=this.genes[i];
