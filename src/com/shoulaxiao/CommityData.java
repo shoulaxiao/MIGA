@@ -13,11 +13,11 @@ public class CommityData {
     public static int NODE_NUM;
     public static int EDGE_NUM;
     static int COMMITY_NUM;
-    static final int SPECIES_NUM=20;//种群数
+    static final int SPECIES_NUM=5;//种群数
     static final int DEVELOP_NUM=50;//进化代数
 
-    static final float pcl=0.2f,pch=0.95f;//交叉概率
-    static final float pm=0.4f;//变异概率
+    static final float pcl=0.2f,pch=0.8f;//交叉概率
+    static final float pm=0.2f;//变异概率
 
     static int T=800000;//初始温度
     static final int l=10;//每个温度循环次数l

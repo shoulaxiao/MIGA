@@ -25,7 +25,6 @@ public class SpeciesPopulation {
         }
 
         point.next=species;
-
         sepciesNum++;
     }
 

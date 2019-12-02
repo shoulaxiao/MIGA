@@ -13,10 +13,13 @@ public class MainRun {
 
         SpeciesPopulation speciesPopulation = new SpeciesPopulation();
 
+        long start=System.currentTimeMillis();
+
         SpeciesIndividual best=GA.run(speciesPopulation);
 
-//        System.out.println("最终的结果为:");
-//        speciesPopulation.traverse();
+        long end=System.currentTimeMillis();
+
+        System.out.println("运行时间为time="+(end-start)+"ms");
 
     }
 }

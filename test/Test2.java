@@ -12,6 +12,7 @@ public class Test2 {
         while (T>0){
             sum++;
             T= (int)(T*k);
+            System.out.println(T);
         }
         System.out.println(sum);
     }

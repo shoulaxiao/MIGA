@@ -3,16 +3,16 @@ import com.shoulaxiao.CommityData;
 public class TestQ {
     public static void main(String[] args) {
 
-       String test="1 1 1 1 1 0 1 1 1 0 0 1 1 1 0 1 0 0 0 0 1 1 1 1 0 1 1 1 0 0 0 0 0 0 0 1 1 1 0 0 0 1 0 0 0 1 1 0 0 0 0 1 1 0 0 1 0 0 0 1 1 0";
+       String test="1 0 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0";
        String[] temp=test.split(" ");
-        System.out.println(caculate(temp));
+       System.out.println(caculate(temp));
     }
 
     private static float caculate(String[] genes){
+
         float degree_i=0.0f,degree_j=0.0f;
         float sum=0.0f;
         float M=2* CommityData.EDGE_NUM;
-        float Q=0.0f;
 
         for (int i=0;i<CommityData.adjacentMatrix.length;i++){
             //得到第i个结点的度
@@ -31,7 +31,7 @@ public class TestQ {
             }
         }
 
-        return Q=(1/M)*sum;
+        return (1/M)*sum;
     }
 
     static int  JudmentCommunity(String[] genes, int i, int j){

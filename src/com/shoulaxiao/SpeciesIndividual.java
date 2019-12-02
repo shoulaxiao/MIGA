@@ -1,24 +1,23 @@
 package com.shoulaxiao;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 public class SpeciesIndividual implements Cloneable {
 
-    int id;//每条染色体唯一表示
-    String[] genes;//基因序列,对应一种编码,即社区划分方案
-    float fitness;//适应度
-    float rate;//被选中的概率
+    public String[] genes;//基因序列,对应一种编码,即社区划分方案
+    public float fitness;//适应度
+    public float rate;//被选中的概率
 
-    SpeciesIndividual next;
+    SpeciesIndividual next;//下一个结点
 
 
     /**
      * 构造函数
      */
-    SpeciesIndividual(){
+    public SpeciesIndividual(){
        genes=new String[CommityData.NODE_NUM];
        this.fitness=0.0f;
+       this.rate=0.0f;
        this.next=null;
     }
 
@@ -29,7 +28,7 @@ public class SpeciesIndividual implements Cloneable {
     void createByRandGenes(){
         Random random=new Random();
         for (int i=0;i<genes.length;i++){
-            genes[i]=Integer.toString(random.nextInt(CommityData.COMMITY_NUM));
+            this.genes[i]=Integer.toString(random.nextInt(CommityData.COMMITY_NUM));
         }
     }
 
@@ -58,7 +57,7 @@ public class SpeciesIndividual implements Cloneable {
             }
         }
 
-        fitness=(1/M)*sum;
+        this.fitness=(1/M)*sum;
     }
 
 
@@ -108,12 +107,41 @@ public class SpeciesIndividual implements Cloneable {
     }
 
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj==null){
+            return false;
+        }
+
+        if (this==obj){
+            return true;
+        }
+
+        if (obj instanceof SpeciesIndividual){
+            SpeciesIndividual sp=(SpeciesIndividual)obj;
+            if (sp.fitness==this.fitness&&jugeIsGene(sp.genes)){
+                return true;
+            }else {
+                return false;
+            }
+        }
+        return false;
+    }
+
+    private boolean jugeIsGene(String[] genes){
+        for (int i=0;i<this.genes.length;i++){
+
+            if (!this.genes[i].equals(genes[i])){
+                return false;
+            }
+        }
+        return true;
+    }
+
     public void print(){
         for (int i=0;i<genes.length;i++){
             System.out.print(genes[i]+" ");
         }
         System.out.println("模块度fitNess="+fitness);
     }
-
-
 }

@@ -19,17 +19,21 @@ public class GeneticAlgorithm {
 
         for (int i=0;i<CommityData.DEVELOP_NUM;i++){
             System.out.println("-----------------第"+(i+1)+"代进化中-----------------");
+
+//            mutate(list);//变异
+
+            //局部搜索
             while (CommityData.T>0){
 
                 for (int j=1;j<CommityData.l;j++){
-                    //选择
+                    //选择两条染色体
                     SpeciesIndividual G1=select(list);
                     SpeciesIndividual G2=select(list);
-
 
                     Random random=new Random();
                     float jk=random.nextFloat();
 
+                    //子代
                     SpeciesIndividual g1;
                     SpeciesIndividual g2;
 
@@ -44,22 +48,22 @@ public class GeneticAlgorithm {
 
                     float p=g1.fitness-g2.fitness;
 
-                    Random rand=new Random();
-                    float r=rand.nextFloat();
-                    if (p>0||Math.expm1(p)/CommityData.T>r){
-                        addSpecies(list,g1);//添加新的物种
-                        mlimination(list);//删除适应度最小的物种
+                    float r=random.nextFloat();
+                    if (p>0||(Math.expm1(p)/CommityData.T)>r){
+                        updateSpeciesPopulation(list,g1);//更新G1
                     }
                 }
                 CommityData.T=(int) (CommityData.T*CommityData.k);
+
             }
 
 
 //            crossover(list);
-//            mutate(list);
-            System.out.println("最好的染色体结果为:");
-            SpeciesIndividual cuurent=getBest(list);
-            cuurent.print();
+
+//            System.out.println("最好的染色体结果为:");
+//            SpeciesIndividual cuurent=getBest(list);
+//            cuurent.print();
+            list.traverse();
         }
 
 
@@ -73,7 +77,8 @@ public class GeneticAlgorithm {
      * @param list
      */
     private void createBeginningSpecies(SpeciesPopulation list) {
-       for (int i=1;i<CommityData.SPECIES_NUM;i++){
+
+       for (int i=0;i<CommityData.SPECIES_NUM;i++){
            SpeciesIndividual species=new SpeciesIndividual();//创建结点
            species.createByRandGenes();//初始种群基因
            species.cacalateFitness();
@@ -105,17 +110,13 @@ public class GeneticAlgorithm {
             point=point.next;
         }
 
-//        System.out.println("totla="+totalFitness);
-
-
-        //计算选中概率
-        point=list.head.next;//游标
+        SpeciesIndividual point2=list.head.next;//游标
 
         //计算出其他的累及概率
-        while(point!= null)//寻找表尾结点
+        while(point2!= null)//寻找表尾结点
         {
-            point.rate=Math.abs(point.fitness)/totalFitness;
-            point=point.next;
+            point2.rate=Math.abs(point2.fitness)/totalFitness;
+            point2=point2.next;
         }
     }
 
@@ -125,12 +126,9 @@ public class GeneticAlgorithm {
      */
     private SpeciesIndividual select(SpeciesPopulation list){
 
-        caculatRate(list);//计算适应度
+        caculatRate(list);  //计算选中概率
 
         SpeciesIndividual point=list.head.next;//游标
-
-        //计算选中概率
-        point=list.head.next;//游标
 
         float selecyt_rate=(float)Math.random();
         float sum=0.0f;
@@ -139,11 +137,11 @@ public class GeneticAlgorithm {
         {
             sum+=point.rate;
             if (sum>selecyt_rate){
-                return point.Deepclone();
+                return point;
             }
             point=point.next;
         }
-        return point.Deepclone();//返回尾巴结点
+        return point;//返回尾巴结点
     }
 
 
@@ -178,7 +176,9 @@ public class GeneticAlgorithm {
      * @return
      */
     private SpeciesIndividual crossoverTwo(SpeciesIndividual G1,SpeciesIndividual G2){
+
         float rate=(float)Math.random();
+
         if (rate>CommityData.pcl&&rate<CommityData.pch){
             Random random=new Random();
             int index=random.nextInt(CommityData.NODE_NUM);
@@ -188,6 +188,7 @@ public class GeneticAlgorithm {
                 }
             }
         }
+        G2.cacalateFitness();//重新计算适应度
         return G2.Deepclone();
     }
 
@@ -257,6 +258,7 @@ public class GeneticAlgorithm {
                         point.genes[index]=String.valueOf(mutateNum);
                 }
             }
+            point.cacalateFitness();
             point=point.next;
         }
     }
@@ -274,14 +276,14 @@ public class GeneticAlgorithm {
             int index=0;
             int mutateNum=0;
             //变异操作
-            while(Integer.parseInt(specie.genes[index])==mutateNum){
-                index=rand.nextInt(CommityData.NODE_NUM);
-                mutateNum=rand.nextInt(CommityData.COMMITY_NUM);
-                if (Integer.parseInt(specie.genes[index])==mutateNum)
-                    specie.genes[index]=String.valueOf(mutateNum);
-            }
+            index=rand.nextInt(CommityData.NODE_NUM);
+            mutateNum=rand.nextInt(CommityData.COMMITY_NUM);
+            specie.genes[index]=String.valueOf(mutateNum);
+
         }
-        return specie;
+
+        specie.cacalateFitness();//重新计算
+        return specie.Deepclone();
     }
 
     /**
@@ -342,6 +344,29 @@ public class GeneticAlgorithm {
         if (species!=null){
             list.add(species);
             mlimination(list);
+        }
+    }
+
+
+    /**
+     * 更新种群
+     * @param species
+     */
+    private void updateSpeciesPopulation(SpeciesPopulation list,SpeciesIndividual species){
+
+        SpeciesIndividual point=list.head;
+        while (point!=null){
+
+            SpeciesIndividual temp=point;//临时结点
+
+            point=point.next;
+            if (point!=null){
+                if (point.equals(species)){
+                    temp.next=species;
+                    species.next=point.next;
+                    point.next=null;
+                }
+            }
         }
     }
 }
