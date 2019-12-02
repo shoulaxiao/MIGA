@@ -10,6 +10,6 @@
 ###代码结构:
 1.CommityData.java:定义了全部变量,以及数据的初始化工作  
 2.SpeciesIndividual.java:染色体个体
-3.SpeciesPopulation.java:物种群,用链表的形式来存储每一个2.SpeciesIndividual个体
+3.SpeciesPopulation.java:物种群,用链表的形式来存储每一个SpeciesIndividual个体
 4.GeneticAlgorithm.java:遗传算法步骤,包括选择交叉变异等操作  
 5.MainRun:主函数
