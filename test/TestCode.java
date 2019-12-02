@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class TestCode {
 
     public static double[] multiPros;
@@ -12,8 +14,20 @@ public class TestCode {
 ////            System.out.println(k);
 //        }
 
-        double sum=1-9.0/38.0;
-        System.out.println(sum);
+//        int sum=0;
+//        long start=System.currentTimeMillis();
+//         for (int i=0;i<800000;i++){
+//             sum=sum+1;
+//         }
+//         long end=System.currentTimeMillis();
+//        System.out.println("总共耗时"+(end-start)+"ms");
+
+        Random random=new Random();
+        for (int i=0;i<100;i++){
+            double r=random.nextInt(100);
+            System.out.println(r);
+        }
+
 
     }
 
