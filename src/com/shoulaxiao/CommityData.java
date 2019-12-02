@@ -13,7 +13,7 @@ public class CommityData {
     public static int NODE_NUM;
     public static int EDGE_NUM;
     static int COMMITY_NUM;
-    static final int SPECIES_NUM=450;//种群数
+    static final int SPECIES_NUM=100;//种群数
     static final int DEVELOP_NUM=50;//进化代数
 
     static final float pcl=0.2f,pch=0.8f;//交叉概率

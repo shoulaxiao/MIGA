@@ -30,8 +30,6 @@ public class GeneticAlgorithm {
                     SpeciesIndividual G1=individual[0];
                     SpeciesIndividual G2=individual[1];
 
-//                    System.out.println(individual[0]+"-----"+individual[1]);
-
                     Random random=new Random();
                     float jk=random.nextFloat();
 
@@ -50,20 +48,16 @@ public class GeneticAlgorithm {
 
                     float p=g1.fitness-g2.fitness;
 
+
                     float r=random.nextFloat();
-                    if (p>0||(Math.expm1(p)/CommityData.T)>r){
+                    if ((p>0||(Math.expm1(p)/CommityData.T)>r)){
                         g1.rate=1.0f;
                         updateSpeciesPopulation(list,G1,g1);//更新G1
-//                        g1.print();
                     }
                 }
                 T=(int) (T*CommityData.k);
 
             }
-
-
-//            crossover(list);
-
             System.out.println("最好的染色体结果为:");
             SpeciesIndividual cuurent=getBest(list);
             cuurent.print();
@@ -89,7 +83,7 @@ public class GeneticAlgorithm {
            list.add(species);
        }
 
-        System.out.println("初始种群数初始化成功,种群数SPECIES_NUM="+CommityData.SPECIES_NUM);
+        System.out.println("初始种群数初始化成功,种群数="+CommityData.SPECIES_NUM);
 
 
     }
@@ -161,7 +155,7 @@ public class GeneticAlgorithm {
         SpeciesIndividual point=list.head.next;
         species[0]=point;
         species[1]=point.next;
-        float one=Float.MIN_VALUE,second=Float.MIN_VALUE;
+        float one=-1.0f,second=-1.0f;
         while (point!=null){
 
             if (point.fitness>=one){
@@ -304,7 +298,7 @@ public class GeneticAlgorithm {
         SpeciesIndividual bestSpecies=null;
         SpeciesIndividual point=list.head.next;//游标
 
-        float fitNum=Float.MIN_VALUE;
+        float fitNum=-1.0f;
 
         while (point!=null){
             if (point.fitness>fitNum){
@@ -313,48 +307,8 @@ public class GeneticAlgorithm {
             }
             point=point.next;
         }
-
         return bestSpecies;
     }
-
-
-//    /**
-//     * 淘汰适应度最小的
-//     */
-//    private void mlimination(SpeciesPopulation list){
-//
-//        SpeciesIndividual point=list.head.next;
-//        float fitNum=Float.MIN_VALUE;
-//        while (point!=null){
-//            if (point.fitness<fitNum){
-//                fitNum=point.fitness;
-//            }
-//            point=point.next;
-//        }
-//
-//        SpeciesIndividual point2=list.head.next;
-//        while (point2!=null){
-//            SpeciesIndividual temp=point2;
-//            if (point2.fitness==fitNum){
-//                point2.next=null;
-//                temp.next=point2.next;
-//            }
-//            point2=point2.next;
-//        }
-//    }
-
-//    /**
-//     * 添加物种到里面,添加一个更好的物种,删除一个适应度最低的物种
-//     * @param list
-//     * @param species
-//     */
-//    private void addSpecies(SpeciesPopulation list,SpeciesIndividual species){
-//
-//        if (species!=null){
-//            list.add(species);
-//            mlimination(list);
-//        }
-//    }
 
 
     /**
@@ -376,7 +330,6 @@ public class GeneticAlgorithm {
                     species.next=point.next;
                     point.next=null;
                     break;
-
                 }
             }else {
                 temp.next=species;
@@ -384,6 +337,4 @@ public class GeneticAlgorithm {
             }
         }
     }
-
-
 }
