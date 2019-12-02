@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37d3576a-37cb-49e6-9bfb-52403b195ffd" name="Default Changelist" comment="代码重构">
-      <change afterPath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/CommityData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/GeneticAlgorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/MainRun.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/SpeciesIndividual.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/SpeciesPopulation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MIGA/test2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/MIGA/Test2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/shoulaxiao/CommityData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/shoulaxiao/GeneticAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/shoulaxiao/MainRun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/shoulaxiao/SpeciesIndividual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/shoulaxiao/SpeciesPopulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MIGA/Genetic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MIGA/Genetic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MIGA/GeneticAlgorithms.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MIGA/GeneticAlgorithms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/MIGA/TestCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/MIGA/TestCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Genetic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Genetic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GeneticAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GeneticAlgorithms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,15 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GeneticAlgorithms.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/SpeciesPopulation.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/CommityData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="509">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,23 +81,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/TestQ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+            <state relative-caret-position="92">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Genetic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="198" column="26" selection-start-line="198" selection-start-column="16" selection-end-line="198" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="253">
+                <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -175,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/com/shoulaxiao/GeneticAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/com/shoulaxiao/CommityData.java" />
         <option value="$PROJECT_DIR$/test/TestQ.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -224,7 +197,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575255310519" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575255934537" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -313,12 +286,12 @@
       <workItem from="1574813433557" duration="12537000" />
       <workItem from="1574992197168" duration="178000" />
       <workItem from="1574995503275" duration="10376000" />
-      <workItem from="1575245260707" duration="9975000" />
+      <workItem from="1575245260707" duration="10673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62965000" />
+    <option name="totallyTimeSpent" value="63663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -329,7 +302,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26459143" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26459143" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -338,7 +311,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5008338" side_tool="true" weight="0.31483456" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.4991662" visible="true" weight="0.57630736" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4991662" visible="true" weight="0.23479189" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4140875" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32977587" />
@@ -510,20 +483,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/CommityData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="509">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="253">
+            <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
