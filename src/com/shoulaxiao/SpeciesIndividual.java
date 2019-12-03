@@ -5,6 +5,13 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
+
+/**
+ * @USER: shoulaxiao
+ * @DATE: 19-12-3
+ * @TIME: 上午11:39
+ *
+ **/
 public class SpeciesIndividual implements Cloneable {
 
     public String[] genes;//基因序列,对应一种编码,即社区划分方案
@@ -12,7 +19,6 @@ public class SpeciesIndividual implements Cloneable {
     public float rate;//被选中的概率
 
     SpeciesIndividual next;//下一个结点
-
 
     /**
      * 构造函数
@@ -150,8 +156,6 @@ public class SpeciesIndividual implements Cloneable {
      * 解析基因
      */
     public void analysis(){
-
-
         System.out.println("一共有"+CommityData.COMMITY_NUM+"个社区");
         int flag=0;
         while (flag<CommityData.COMMITY_NUM){
@@ -164,9 +168,5 @@ public class SpeciesIndividual implements Cloneable {
             System.out.println();
             flag++;
         }
-
-
-
-
     }
 }

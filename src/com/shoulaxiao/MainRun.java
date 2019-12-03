@@ -2,6 +2,11 @@ package com.shoulaxiao;
 
 import java.util.Scanner;
 
+/**
+ * @USER: shoulaxiao
+ * @DATE: 19-12-3
+ * @TIME: 上午11:39
+ **/
 public class MainRun {
     public static void main(String[] args) {
 

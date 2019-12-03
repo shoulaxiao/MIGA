@@ -13,3 +13,8 @@
 3.SpeciesPopulation.java:物种群,用链表的形式来存储每一个SpeciesIndividual个体
 4.GeneticAlgorithm.java:遗传算法步骤,包括选择交叉变异等操作  
 5.MainRun.java:主函数
+
+##算法流程  
+1.编码  
+在初始化过程中，染色体被编码为整数字符串。种群中的染色体可以表达如下：
+

@@ -1,6 +1,12 @@
 package com.shoulaxiao;
 
 
+/**
+ * @USER: shoulaxiao
+ * @DATE: 19-12-3
+ * @TIME: 上午11:39
+ *
+ **/
 public class SpeciesPopulation {
 
     SpeciesIndividual head;//头结点

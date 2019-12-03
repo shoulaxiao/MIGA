@@ -3,8 +3,11 @@ package com.shoulaxiao;
 import java.util.Random;
 
 /**
+ * @USER: shoulaxiao
+ * @DATE: 19-12-3
+ * @TIME: 上午11:39
  * 遗传算法类
- */
+ **/
 public class GeneticAlgorithm {
 
     /**
@@ -31,9 +34,6 @@ public class GeneticAlgorithm {
                     //选择两条染色体
                     SpeciesIndividual G1=individual[0];
                     SpeciesIndividual G2=individual[1];
-
-//                    SpeciesIndividual G1=select(list);
-//                    SpeciesIndividual G2=select(list);
 
                     Random random=new Random();
                     float jk=random.nextFloat();

@@ -7,6 +7,11 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @USER: shoulaxiao
+ * @DATE: 19-12-3
+ * @TIME: 上午11:39
+ **/
 public class CommityData {
 
 
