@@ -1,10 +1,6 @@
 package com.shoulaxiao;
 
-import java.text.DecimalFormat;
-import java.util.HashSet;
 import java.util.Random;
-import java.util.Set;
-
 
 /**
  * @USER: shoulaxiao
@@ -14,9 +10,9 @@ import java.util.Set;
  **/
 public class SpeciesIndividual implements Cloneable {
 
-    public String[] genes;//基因序列,对应一种编码,即社区划分方案
-    public float fitness;//适应度
-    public float rate;//被选中的概率
+     String[] genes;//基因序列,对应一种编码,即社区划分方案
+     float fitness;//适应度
+     float rate;//被选中的概率
 
     SpeciesIndividual next;//下一个结点
 
@@ -149,7 +145,7 @@ public class SpeciesIndividual implements Cloneable {
         for (int i=0;i<genes.length;i++){
             System.out.print(genes[i]+" ");
         }
-        System.out.println("模块度fitNess="+fitness);
+        System.out.println("模块度Q="+fitness);
     }
 
     /**

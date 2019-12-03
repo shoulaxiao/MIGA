@@ -11,7 +11,7 @@ import java.util.Random;
 public class GeneticAlgorithm {
 
     /**
-     * 遗传算法类
+     * 遗传算法流程
      * @param list
      * @return
      */
@@ -25,6 +25,9 @@ public class GeneticAlgorithm {
         for (int i=0;i<CommityData.DEVELOP_NUM;i++){
             System.out.println("第"+(i+1)+"代进化中...");
             int T=CommityData.T;
+
+            mutate(list);//对整个物种群进行变异操作
+
             //局部搜索
             while (T>0){
 
@@ -60,7 +63,6 @@ public class GeneticAlgorithm {
                     }
 
                     SpeciesIndividual cuurent=getBest(list);
-//                    cuurent.print();
                     if (cuurent.fitness>global_best.fitness){
                         global_best=cuurent.Deepclone();
                         global_best.print();
