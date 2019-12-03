@@ -20,6 +20,8 @@ public class MainRun {
         long end=System.currentTimeMillis();
 
         System.out.println("运行时间为time="+(end-start)/1000.0+"s");
+        best.analysis();
+//        speciesPopulation.traverse();
 
     }
 }

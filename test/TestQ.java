@@ -3,7 +3,7 @@ import com.shoulaxiao.CommityData;
 public class TestQ {
     public static void main(String[] args) {
 
-       String test="0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 0";
+       String test="1 1 0 1 1 1 1 1 0 0 0 1 1 1 1 1 1 0 0 1 0 1 0 1 1 1 0 1 1 0 1 1 0 0";//0.10355012
        String[] temp=test.split(" ");
        System.out.println(caculate(temp));
     }

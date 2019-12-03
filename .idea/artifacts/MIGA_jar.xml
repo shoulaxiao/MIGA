@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MIGA:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MIGA_jar</output-path>
+    <root id="archive" name="MIGA.jar">
+      <element id="module-output" name="MIGA" />
+    </root>
+  </artifact>
+</component>

@@ -1,6 +1,9 @@
 package com.shoulaxiao;
 
+import java.text.DecimalFormat;
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Set;
 
 public class SpeciesIndividual implements Cloneable {
 
@@ -36,8 +39,10 @@ public class SpeciesIndividual implements Cloneable {
      * 计算适应度
      */
     void cacalateFitness(){
+
         float degree_i=0.0f,degree_j=0.0f;
         float sum=0.0f;
+
         float M=2*CommityData.EDGE_NUM;
 
         for (int i=0;i<CommityData.adjacentMatrix.length;i++){
@@ -45,11 +50,6 @@ public class SpeciesIndividual implements Cloneable {
             degree_i=CommityData.neigbor_List.get(i).size();
 
             for (int j=0;j<CommityData.adjacentMatrix.length;j++){
-                //不计算对角线
-                if (i==j){
-                    continue;
-                }
-
                 //得到第j个结点的邻接结点
                 degree_j=CommityData.neigbor_List.get(j).size();
 
@@ -144,5 +144,29 @@ public class SpeciesIndividual implements Cloneable {
             System.out.print(genes[i]+" ");
         }
         System.out.println("模块度fitNess="+fitness);
+    }
+
+    /**
+     * 解析基因
+     */
+    public void analysis(){
+
+
+        System.out.println("一共有"+CommityData.COMMITY_NUM+"个社区");
+        int flag=0;
+        while (flag<CommityData.COMMITY_NUM){
+            System.out.println("第"+(flag+1)+"社区包含节点:");
+            for (int i=0;i<genes.length;i++){
+                if (flag==Integer.parseInt(genes[i])){
+                    System.out.print((i+1)+" ");
+                }
+            }
+            System.out.println();
+            flag++;
+        }
+
+
+
+
     }
 }

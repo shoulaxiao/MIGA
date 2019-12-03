@@ -51,8 +51,7 @@ public class GeneticAlgorithm {
 
                     float r=random.nextFloat();
                     if ((p>0||(Math.expm1(p)/CommityData.T)>r)){
-                        g1.rate=1.0f;
-                        updateSpeciesPopulation(list,G1,g1);//更新G1
+                        updateSpeciesPopulation(list,G2,g1);//更新G2
                     }
                 }
                 T=(int) (T*CommityData.k);
