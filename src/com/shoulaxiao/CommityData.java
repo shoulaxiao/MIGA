@@ -27,7 +27,7 @@ public class CommityData {
     public static List<ArrayList<Integer>> neigbor_List;//邻接表
     public static int[][] adjacentMatrix;//邻接矩阵
 
-    static String path="/home/shoulaxiao/文档/dataCluster/karate.txt";
+    static String path="/home/shoulaxiao/文档/dataCluster/dolphin.txt";
 
     static {
         String encoding="utf-8";

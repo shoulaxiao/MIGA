@@ -3,7 +3,7 @@ import com.shoulaxiao.CommityData;
 public class TestQ {
     public static void main(String[] args) {
 
-       String test="1 1 0 1 1 1 1 1 0 0 0 1 1 1 1 1 1 0 0 1 0 1 0 1 1 1 0 1 1 0 1 1 0 0";//0.10355012
+       String test="1 1 1 0 1 1 1 1 1 0 1 0 1 1 1 0 1 1 1 1 0 1 0 0 0 0 0 0 0 0 1 0 0 0";//0.19025277
        String[] temp=test.split(" ");
        System.out.println(caculate(temp));
     }
@@ -19,10 +19,7 @@ public class TestQ {
             degree_i=CommityData.neigbor_List.get(i).size();
 
             for (int j=0;j<CommityData.adjacentMatrix.length;j++){
-                //不计算对角线
-                if (i==j){
-                    continue;
-                }
+                //不计算对角
 
                 //得到第j个结点的邻接结点
                 degree_j=CommityData.neigbor_List.get(j).size();

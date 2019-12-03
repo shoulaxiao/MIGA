@@ -6,20 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37d3576a-37cb-49e6-9bfb-52403b195ffd" name="Default Changelist" comment="代码重构">
+    <list default="true" id="37d3576a-37cb-49e6-9bfb-52403b195ffd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIGA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MIGA.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/CommityData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/CommityData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/GeneticAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/GeneticAlgorithm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/MainRun.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/MainRun.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/SpeciesIndividual.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/SpeciesIndividual.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/SpeciesPopulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MIGA/com/shoulaxiao/SpeciesPopulation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/MIGA/TestQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/MIGA/TestQ.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/shoulaxiao/CommityData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shoulaxiao/CommityData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/shoulaxiao/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shoulaxiao/GeneticAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/shoulaxiao/MainRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shoulaxiao/MainRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/shoulaxiao/SpeciesIndividual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shoulaxiao/SpeciesIndividual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/TestQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestQ.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/MainRun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="552">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -52,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/GeneticAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+            <state relative-caret-position="56">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -82,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/SpeciesIndividual.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="562">
               <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -94,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/CommityData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="345">
+              <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/TestQ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="368">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -164,12 +159,12 @@
         <option value="$PROJECT_DIR$/test/TestCode.java" />
         <option value="$PROJECT_DIR$/test/TestEqual.java" />
         <option value="$PROJECT_DIR$/src/com/shoulaxiao/SpeciesPopulation.java" />
-        <option value="$PROJECT_DIR$/src/com/shoulaxiao/MainRun.java" />
-        <option value="$PROJECT_DIR$/test/TestQ.java" />
         <option value="$PROJECT_DIR$/test/Test2.java" />
         <option value="$PROJECT_DIR$/src/com/shoulaxiao/SpeciesIndividual.java" />
+        <option value="$PROJECT_DIR$/test/TestQ.java" />
         <option value="$PROJECT_DIR$/src/com/shoulaxiao/GeneticAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/com/shoulaxiao/CommityData.java" />
+        <option value="$PROJECT_DIR$/src/com/shoulaxiao/MainRun.java" />
       </list>
     </option>
   </component>
@@ -230,13 +225,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575336054174" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575343363401" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -301,8 +297,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainRun" />
-        <item itemvalue="Application.Test2" />
         <item itemvalue="Application.TestQ" />
+        <item itemvalue="Application.Test2" />
         <item itemvalue="Application.TestEqual" />
         <item itemvalue="Application.GeneticAlgorithms" />
       </list>
@@ -324,22 +320,31 @@
       <workItem from="1574992197168" duration="178000" />
       <workItem from="1574995503275" duration="10376000" />
       <workItem from="1575245260707" duration="35923000" />
-      <workItem from="1575332041277" duration="3989000" />
+      <workItem from="1575332041277" duration="7673000" />
     </task>
+    <task id="LOCAL-00001" summary="代码重构">
+      <created>1575336064178</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575336064178</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92902000" />
+    <option name="totallyTimeSpent" value="96586000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26848248" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26848248" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -348,7 +353,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5008338" side_tool="true" weight="0.31483456" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.4991662" visible="true" weight="0.54962647" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4991662" visible="true" weight="0.28388473" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.20384204" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32977587" />
@@ -457,13 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/MainRun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/data/karate.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -475,20 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/SpeciesPopulation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -514,9 +498,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/GeneticAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/SpeciesPopulation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/MainRun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/SpeciesIndividual.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="562">
           <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -524,17 +536,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/GeneticAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shoulaxiao/CommityData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="345">
+          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

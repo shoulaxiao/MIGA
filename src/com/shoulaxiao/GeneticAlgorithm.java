@@ -16,10 +16,12 @@ public class GeneticAlgorithm {
 
         createBeginningSpecies(list);//创建初始种群
 
-        for (int i=0;i<CommityData.DEVELOP_NUM;i++){
-            System.out.println("-----------------第"+(i+1)+"代进化中-----------------");
-            int T=CommityData.T;
+        SpeciesIndividual global_best=list.head.next;
 
+
+        for (int i=0;i<CommityData.DEVELOP_NUM;i++){
+            System.out.println("第"+(i+1)+"代进化中...");
+            int T=CommityData.T;
             //局部搜索
             while (T>0){
 
@@ -29,6 +31,9 @@ public class GeneticAlgorithm {
                     //选择两条染色体
                     SpeciesIndividual G1=individual[0];
                     SpeciesIndividual G2=individual[1];
+
+//                    SpeciesIndividual G1=select(list);
+//                    SpeciesIndividual G2=select(list);
 
                     Random random=new Random();
                     float jk=random.nextFloat();
@@ -53,19 +58,18 @@ public class GeneticAlgorithm {
                     if ((p>0||(Math.expm1(p)/CommityData.T)>r)){
                         updateSpeciesPopulation(list,G2,g1);//更新G2
                     }
+
+                    SpeciesIndividual cuurent=getBest(list);
+//                    cuurent.print();
+                    if (cuurent.fitness>global_best.fitness){
+                        global_best=cuurent.Deepclone();
+                        global_best.print();
+                    }
                 }
                 T=(int) (T*CommityData.k);
-
             }
-            System.out.println("最好的染色体结果为:");
-            SpeciesIndividual cuurent=getBest(list);
-            cuurent.print();
-//            list.traverse();
         }
-
-
-        SpeciesIndividual best=getBest(list);
-        return best;
+        return global_best;
     }
 
 
@@ -81,10 +85,7 @@ public class GeneticAlgorithm {
            species.cacalateFitness();
            list.add(species);
        }
-
         System.out.println("初始种群数初始化成功,种群数="+CommityData.SPECIES_NUM);
-
-
     }
 
 
@@ -137,9 +138,8 @@ public class GeneticAlgorithm {
             if (sum>selecyt_rate){
                 return point;
             }
-
         }
-        return point;//返回尾巴结点
+        return list.head.next;//返回尾巴结点
     }
 
 
